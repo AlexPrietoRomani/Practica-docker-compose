@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 USER airflow
 
 # Copiar el archivo requirements.txt
-COPY requirements.txt .
+COPY requirements.txt /requirements.txt
 
 # Actualizar pip e instalar dependencias desde requirements.txt
 RUN pip install --upgrade pip
