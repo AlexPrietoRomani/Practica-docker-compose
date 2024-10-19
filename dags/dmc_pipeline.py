@@ -71,7 +71,7 @@ def train_with_ml_system():
 
 # Función para ejecutar las pruebas unitarias de test.py
 def run_tests():
-    result = subprocess.run(['pytest', '/opt/airflow/dags/ml/test.py'], capture_output=True, text=True)
+    result = subprocess.run(['pytest', '/opt/airflow/dags/test.py'], capture_output=True, text=True)
     print(result.stdout)
     if result.returncode != 0:
         raise Exception("Test failed")
